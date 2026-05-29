@@ -26,7 +26,7 @@
             width: 100%;
             max-width: 400px;
             border-radius: 24px;
-            padding: 45px 24px;
+            padding: 35px 24px;
             text-align: center;
             color: #ffffff;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -76,7 +76,7 @@
             font-size: 0.9rem;
             line-height: 1.6;
             color: #cbd5e1;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             text-align: center;
         }
 
@@ -90,11 +90,11 @@
             background: linear-gradient(135deg, #7c3aed, #4f46e5);
             color: #ffffff;
             text-decoration: none;
-            padding: 16px;
+            padding: 14px;
             border-radius: 12px;
             font-weight: 600;
             font-size: 1rem;
-            margin-bottom: 40px;
+            margin-bottom: 35px;
             transition: transform 0.2s, box-shadow 0.2s;
             box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
         }
@@ -102,6 +102,39 @@
         .btn-cta:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(124, 58, 237, 0.4);
+        }
+
+        .qr-section {
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .qr-text {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .qr-container {
+            background-color: #ffffff;
+            padding: 12px;
+            border-radius: 12px;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .qr-container img {
+            display: block;
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
         }
 
         .footer-links {
@@ -119,10 +152,6 @@
 
         .footer-links a:hover {
             color: #ffffff;
-        }
-
-        .divider {
-            color: rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
@@ -142,15 +171,26 @@
             multiplicar tus ventas y conectar con más clientes todos los días.
         </p>
 
-        <!-- Botón con enlace de WhatsApp optimizado y mensaje predefinido -->
-        <a href="https://wa.me" class="btn-cta" target="_blank">¡Digitaliza tu Negocio Hoy!</a>
+        <!-- Enlace directo a tu WhatsApp -->
+        <a href="https://wa.me/5493815727447?text=Hola!%20Me%20interesa%20digitalizar%20mi%20negocio." class="btn-cta" target="_blank">
+            ¡Digitaliza tu Negocio Hoy!
+        </a>
+
+        <div class="qr-section">
+            <div class="qr-text">
+                📸 Escanea para guardar mi contacto y ver mi portafolio
+            </div>
+            <!-- QR generado dinámicamente con tu número -->
+            <div class="qr-container">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/5493815727447?text=Hola!%20Me%20interesa%20digitalizar%20mi%20negocio." alt="QR WhatsApp">
+            </div>
+        </div>
 
         <div class="footer-links">
-            <a href="https://wa.me" target="_blank">Contacto</a>
-            <span class="divider">•</span>
-            <a href="#" target="_blank">Instagram</a>
+            <!-- Enlace de correo actualizado -->
+            <a href="mailto:poncejose027@gmail.com?subject=Consulta%20para%20tu%20negocio" target="_blank">Contacto</a>
         </div>
     </div>
 
 </body>
-</html>
+    </html>
